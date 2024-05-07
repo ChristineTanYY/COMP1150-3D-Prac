@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 86e3e1b12bba74f239d44e7756285c3a, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: f50d6c3d3802c417b832e29bdac4eca3, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -157,7 +157,6 @@ Transform:
   - {fileID: 1387022894}
   - {fileID: 917944914}
   - {fileID: 1501906459}
-  - {fileID: 1559691132}
   - {fileID: 1180695701}
   - {fileID: 790339899}
   m_Father: {fileID: 0}
@@ -270,7 +269,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &790339899
 Transform:
   m_ObjectHideFlags: 0
@@ -543,7 +542,7 @@ Transform:
   m_GameObject: {fileID: 1180695700}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.8, y: -6, z: 3.96}
+  m_LocalPosition: {x: -6.22, y: -6, z: 3.96}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -956,7 +955,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 428838415}
   m_LocalEulerAnglesHint: {x: -0.382, y: -90.213, z: -0.668}
---- !u!1 &1559691131
+--- !u!1 &1675382514
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -964,49 +963,34 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1559691132}
-  - component: {fileID: 1559691133}
+  - component: {fileID: 1675382516}
+  - component: {fileID: 1675382515}
   m_Layer: 0
-  m_Name: light
+  m_Name: Test point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1559691132
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559691131}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.0311286, y: 0.48204595, z: -0.00289413, w: 0.875588}
-  m_LocalPosition: {x: -4.29, y: -0.64, z: 1.52}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 428838415}
-  m_LocalEulerAnglesHint: {x: 3.285, y: 57.71, z: 1.432}
---- !u!108 &1559691133
+--- !u!108 &1675382515
 Light:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559691131}
+  m_GameObject: {fileID: 1675382514}
   m_Enabled: 1
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9811321, g: 0.9487362, b: 0.9487362, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Intensity: 0.64
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 1
+    m_Type: 2
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1039,20 +1023,36 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
+  m_BounceIntensity: 1.64
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 4e-45, y: 7.1e-44, z: 0, w: 2.1052807e-22}
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!4 &1675382516
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675382514}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0.13753243, y: -0, z: -0, w: 0.9904973}
+  m_LocalPosition: {x: 245.9587, y: 176.26, z: 43.51}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 15.81, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 701672885}
   - {fileID: 428838415}
+  - {fileID: 1675382516}
