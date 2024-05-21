@@ -756,7 +756,7 @@ HingeJoint:
   serializedVersion: 2
   m_UseSpring: 1
   m_Spring:
-    spring: 0
+    spring: 1.3
     damper: 1
     targetPosition: 0
   m_UseMotor: 0
@@ -813,11 +813,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2898945986430963012, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.0000019071286
+      value: 0.3999931
       objectReference: {fileID: 0}
     - target: {fileID: 2898945986430963012, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0.000000028970419
+      value: -0.47999907
       objectReference: {fileID: 0}
     - target: {fileID: 2898945986430963013, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: m_Follow
