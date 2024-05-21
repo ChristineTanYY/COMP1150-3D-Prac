@@ -213,6 +213,79 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &765718928
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 765718931}
+  - component: {fileID: 765718930}
+  - component: {fileID: 765718929}
+  m_Layer: 0
+  m_Name: Door Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &765718929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765718928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d17b8d21f9ee6b046a53225382d63b7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 657370053}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 128
+  enterTriggerName: Enter
+  exitTriggerName: Exit
+  occupiedBoolName: Occupied
+--- !u!65 &765718930
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765718928}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &765718931
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 765718928}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 266.65, y: 178.08, z: 30.27}
+  m_LocalScale: {x: 2.161221, y: 4.670644, z: 1.7760528}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &860626149
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -852,6 +925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 529626311258672458, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1041110739653166214, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: m_LocalPosition.y
       value: 5.6749725
@@ -864,6 +941,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 1527755292614851931, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 2688622862709300961, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: canPush
       value: 1
@@ -871,6 +952,14 @@ PrefabInstance:
     - target: {fileID: 2688622862709300961, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: pushLayers.m_Bits
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898945985990081671, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2898945986430962875, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
+      propertyPath: m_Layer
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 2898945986430963012, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -928,10 +1017,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5309611362705732625, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 5309611362705732630, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
       propertyPath: CinemachineCameraTarget
       value: 
       objectReference: {fileID: 173242852}
+    - target: {fileID: 8422740354017222663, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
+      propertyPath: m_Layer
+      value: 7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 1041110739653166211, guid: 00c0d1be2dd9d41a48aca7b5123d202e, type: 3}
@@ -942,6 +1039,7 @@ PrefabInstance:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 765718931}
   - {fileID: 1163168665}
   - {fileID: 1708813575}
   - {fileID: 862002340}
